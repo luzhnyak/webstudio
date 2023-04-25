@@ -221,7 +221,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--dark-color);
 }
 
@@ -252,7 +251,6 @@ img {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--general-font-color);
 }
 
@@ -288,6 +286,9 @@ img {
     gap: 40px;
     align-items: baseline;
   }
+  .mobile-menu-container {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -300,6 +301,72 @@ img {
   .page-nav {
     margin-left: 76px;
   }
+}
+
+/* ---Mobile menu--- */
+
+.mobile-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 40px 40px 40px;
+  background-color: var(--white-color);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.mobile-menu-container.is-open {
+  transform: translateX(0);
+}
+
+.close-menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  color: var(--dark-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-item {
+  margin-bottom: 40px;
+}
+
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.11;
+  color: var(--dark-color);
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: var(--pressed-state-color);
+}
+
+.mobile-contacts {
+  margin-bottom: 48px;
+}
+
+.mobile-contacts .mobile-menu-link {
+  color: var(--primary-brand-color);
 }
 
 /* ======================= /Header section ========================== */
