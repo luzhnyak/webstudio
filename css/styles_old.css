@@ -626,10 +626,6 @@ img {
   border-radius: 4px;
 }
 
-.subscribe-wrapper {
-  display: flex;
-}
-
 .subscribe-btn {
   display: flex;
   align-items: center;
