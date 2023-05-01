@@ -368,7 +368,7 @@ img {
 
 .mobile-menu-link {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 1.11;
   color: var(--dark-color);
 }
@@ -382,8 +382,32 @@ img {
   margin-bottom: 48px;
 }
 
-.mobile-contacts .mobile-menu-link {
+.mobile-phone-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   color: var(--primary-brand-color);
+}
+
+.mobile-email-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--general-font-color);
+}
+
+.mobile-menu-container .social-list {
+  gap: 56px;
+}
+
+@media screen and (max-width: 427px) {
+  .mobile-phone-link {
+    font-size: 24px;
+  }
+
+  .mobile-menu-container .social-list {
+    gap: 24px;
+  }
 }
 
 /* ======================= /Header section ========================== */
