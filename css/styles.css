@@ -1148,7 +1148,7 @@ img {
 }
 
 .is-hidden .modal {
-  transform: translateY(-100%);
+  transform: translateY(-50%) scale(0.5);
 }
 
 @media screen and (min-width: 428px) {
