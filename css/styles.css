@@ -234,6 +234,10 @@ img {
   font-style: normal;
 }
 
+.contacts-item {
+  line-height: 0;
+}
+
 /* 428px, 768px і 1158px. */
 
 @media screen and (max-width: 767px) {
@@ -253,7 +257,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu-wrapper {
-    /* margin-right: 0; */
     display: flex;
     align-items: center;
   }
@@ -263,8 +266,6 @@ img {
   }
 
   .page-nav {
-    /* width: 100%; */
-    /* flex-shrink: 1; */
     display: flex;
     align-items: baseline;
   }
@@ -282,6 +283,7 @@ img {
 
   .contacts-link {
     color: var(--general-font-color);
+    margin: 0;
   }
 
   .contacts-link:hover,
@@ -551,6 +553,13 @@ img {
   margin-bottom: 8px;
 }
 
+.about-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--general-font-color);
+}
+
 /* 428px, 768px і 1158px. */
 
 @media screen and (max-width: 767px) {
@@ -584,6 +593,10 @@ img {
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 8px;
+  }
+
+  .about-item-text {
+    font-weight: 400;
   }
 
   .about-svg-wraper {
@@ -916,6 +929,10 @@ img {
 /* 428px, 768px і 1158px. */
 
 @media screen and (min-width: 768px) {
+  .customers-list {
+    column-gap: 24px;
+  }
+
   .customers-item {
     flex-basis: calc((100% - 48px) / 3);
   }
@@ -923,7 +940,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .customers-container {
-    width: 552px;
+    width: 582px;
   }
 }
 
@@ -1055,7 +1072,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
-    width: 552px;
+    width: 582px;
     flex-wrap: wrap;
   }
 }
