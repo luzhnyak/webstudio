@@ -1184,6 +1184,17 @@ img {
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 767px) {
+  .backdrop {
+    overflow: auto;
+  }
+
+  .modal {
+    top: 0;
+    transform: translate(-50%, 0%);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
