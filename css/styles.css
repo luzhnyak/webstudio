@@ -1184,7 +1184,7 @@ img {
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 1057px) {
+@media screen and (orientation: landscape) {
   .backdrop {
     overflow: auto;
   }
