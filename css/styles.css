@@ -1184,7 +1184,7 @@ img {
   }
 }
 
-@media screen and (max-height: 576px) {
+@media screen and (max-height: 584px) {
   .backdrop {
     overflow: auto;
   }
@@ -1229,7 +1229,7 @@ img {
   color: #8e8f99;
 }
 
-.form-input-wrapper {
+.form-label .form-input-wrapper {
   display: block;
   position: relative;
   margin-top: 4px;
@@ -1248,6 +1248,7 @@ img {
 .form-input {
   display: block;
   width: 100%;
+  height: 40px;
   padding: 11px 16px 11px 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -1260,8 +1261,10 @@ img {
 }
 
 .form-comment {
+  display: block;
   width: 100%;
   height: 120px;
+  margin-top: 4px;
   resize: none;
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
