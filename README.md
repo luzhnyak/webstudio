@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-GoIT Home Work 7
+# WebStudio
+Технічна реалізація сайту для web-студії.
