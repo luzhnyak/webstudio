@@ -796,6 +796,10 @@ img {
   overflow: hidden;
 }
 
+.portfolio-item-img {
+  object-fit: cover;
+}
+
 .portfolio-item-overlay {
   position: absolute;
   left: 0;
